@@ -12,6 +12,10 @@ Author URI: 	http://www.dragonet.nl/
 */
 
 require_once( __DIR__ . '/dg_page_likes-front-functions.php');
+require_once( __DIR__ . '/dg_page_likes-ajax-functions.php');
 
 $likes = new DgPageLikes();
 $likes->setActions();
+
+$likes_ajax = new DgPageLikesAjax();
+$likes_ajax->setActions();
